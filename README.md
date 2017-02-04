@@ -1,9 +1,34 @@
 # Online Safe Voting System
 
-This is a draft. At the current state this document doesn't provide a safe voting system. This document is open sourced and allow peer-review.
-The goal is not yet to implement such a proposal, but to catch the limits of the current proposal.
+## Introduction
 
-**Note**: I have no prior knowledge of the BlockChain. I understand the basics of this technology but never used it. 
+This is a draft. At the current state this document doesn't provide a safe voting system. This document is open sourced and allow peer-review.
+The goal is not yet to implement such a proposal, but to catch the limits of the current proposal and improve it.
+
+**Note**: I have no prior knowledge of the Blockchain. I understand the basics of this technology but never used it. Therefore, I may be making assumptions that would reveal to be wrong.
+
+**Note**: *Being non-native in English, please forgive me for my silly mistakes.*
+
+If you wish to participaten please either participate [in the forum](https://asgardia.space/en/forum/forum/feedback-11/topic/online-and-safe-voting-system-2614/) or open [a github issue](https://github.com/Vadorequest/online-safe-voting-system/issues). Feel free to make Pull Requests as well. _(better discuss it in an issue first if it's a big change or requires significant work!)_
+
+---
+
+**The aim is to propose a way for people to vote online, from anywhere, safely.**
+By "safe" we mean that nobody will be able to know who people have voted for. Votes shall remains secrets.
+
+The general idea is to use the blockchain, which will contain every vote every citizen has done and therefore will be able to ensure that every vote has been taken into account.
+
+Each user shall be able to verify that his vote has been taken into account correctly. But still ensure secrecy of whom voted for what.
+
+Each user would have the ability to confirm to the system that his vote has been taken into account and is correct.
+
+By replaying all commits from the blockain, one should be able to verify that the given results match his own results and therefore are correct.
+
+This way, anyone could have the possibility to ensure the public results have not been tampered with. 
+
+_In the following document, a "user who casts a vote" will be referred as a "Source". While a "recipient for a vote" will be referred as a "Target"._
+
+---
 
 ## Summary
 
@@ -22,26 +47,7 @@ The goal is not yet to implement such a proposal, but to catch the limits of the
 - [Why not use followmyvote directly](https://github.com/Vadorequest/online-safe-voting-system#why-not-use-followmyvote-directly) 
 - [External links](https://github.com/Vadorequest/online-safe-voting-system#external-links) 
 
-
 ---
-
-## Introduction
-
-The aim is to propose a way for people to vote online, from anywhere, safely.
-By "safe" we mean that nobody will be able to know who people have voted for. Votes shall remains secrets.
-
-The general idea is to use the blockchain, which will contain every vote every citizen has done and therefore will be able to ensure that every vote has been taken into account.
-
-Each user shall be able to verify that his vote has been taken into account correctly. But still ensure secrecy of whom voted for what.
-
-Each user would have the ability to confirm to the system that his vote has been taken into account and is correct.
-
-By replaying all commits from the blockain, one should be able to verify that the given results match his own results and therefore are correct.
-
-This way, anyone could have the possibility to ensure the public results have not been tampered with. 
-
-_In the following document, a "user who casts a vote" will be referred as a "Source"._
-
 
 ## Entities
 
