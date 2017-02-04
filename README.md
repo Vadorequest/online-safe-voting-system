@@ -44,8 +44,8 @@ In order to know what the Target score is, every vote must be calculated, which 
 
 ### Source
 
-	A Source is something that cast a vote.
-	A source usually is a human being.
+A Source is something that cast a vote.
+A source usually is a human being.
 
 A Source has a private identifier and a public identifier.
 
@@ -71,6 +71,9 @@ The system must be able to regenerate the same private id using the key and the 
 
 If the source loose its salt, there is no possible recovery of the private id. But the vote cast will still be taken into account. Only the ability to verify it was taken into account correctly will be lost.
 
+---
+
+## Operations
 
 ### Vote cast process
 
@@ -119,6 +122,7 @@ This way, we have a two-ways operation that should ensure privacy.
 #### Complaints
 
 If the Source doesn't agree with the results, it can fill a complaint, which will lead to an investigation. (But this is another part really)
+
 
 
 ### Blockchain verification
