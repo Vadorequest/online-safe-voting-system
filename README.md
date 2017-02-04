@@ -3,6 +3,26 @@
 This is a draft. At the current state this document doesn't provide a safe voting system. This document is open sourced and allow peer-review.
 The goal is not yet to implement such a proposal, but to catch the limits of the current proposal.
 
+**Note**: I have no prior knowledge of the BlockChain. I understand the basics of this technology but never used it. 
+
+## Summary
+
+- [Introduction](https://github.com/Vadorequest/online-safe-voting-system#introduction) 
+- [Entities](https://github.com/Vadorequest/online-safe-voting-system#entities) 
+  - [Targets](https://github.com/Vadorequest/online-safe-voting-system#targets) 
+  - [Sources](https://github.com/Vadorequest/online-safe-voting-system#sources) 
+- [Operations](https://github.com/Vadorequest/online-safe-voting-system#operations) 
+  - [Vote cast process](https://github.com/Vadorequest/online-safe-voting-system#vote-cast-process) 
+  - [Vote verification process](https://github.com/Vadorequest/online-safe-voting-system#vote-verification-process---for-a-source) 
+  - [Blockchain verification](https://github.com/Vadorequest/online-safe-voting-system#blockchain-verification) 
+- [Blockchain in depths](https://github.com/Vadorequest/online-safe-voting-system#blockchain-in-depths-source-followmyvotecom) 
+  - [Definition of Blockchain](https://github.com/Vadorequest/online-safe-voting-system#definition-of-blockchain) 
+  - [Motivations](https://github.com/Vadorequest/online-safe-voting-system#motivations) 
+  - [Blockchain and online voting (schema)](https://github.com/Vadorequest/online-safe-voting-system#blockchain-and-online-voting) 
+- [Why not use followmyvote directly](https://github.com/Vadorequest/online-safe-voting-system#why-not-use-followmyvote-directly) 
+- [External links](https://github.com/Vadorequest/online-safe-voting-system#external-links) 
+
+
 ---
 
 ## Introduction
@@ -19,6 +39,8 @@ Each user would have the ability to confirm to the system that his vote has been
 By replaying all commits from the blockain, one should be able to verify that the given results match his own results and therefore are correct.
 
 This way, anyone could have the possibility to ensure the public results have not been tampered with. 
+
+_In the following document, a "user who casts a vote" will be referred as a "Source"._
 
 
 ## Entities
@@ -42,7 +64,7 @@ In order to know what the Target score is, every vote must be calculated, which 
   total: <int> - Total of positive votes minus negative votes
 
 
-### Source
+### Sources
 
 A Source is something that cast a vote.
 A source usually is a human being.
